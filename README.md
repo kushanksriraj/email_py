@@ -1,6 +1,6 @@
 #### Send an email notification after some time-consuming task in your program
 
-###### This program sends an email to your given email address from Gmail.
+##### This program sends an email to your given email address from Gmail.
 
 First you need to **turn on the 'Less secure app access'** on your google account.
 You can find this option in the Security section of your google account.
