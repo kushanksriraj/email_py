@@ -1,6 +1,5 @@
 from send_email import send_email
 
-
 #do some time intensive work
 i = 1
 for _ in range(100000):
