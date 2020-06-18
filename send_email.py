@@ -9,11 +9,11 @@ SENDER_PASSWORD = data["your_password"]
 
 def send_email(receiver_email, subject, body):
     message = 'Subject: {}\n\n{}'.format(subject, body)
-    i = 0
+    
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as server:
         server.login(SENDER_EMAIL, SENDER_PASSWORD)
-        i = server.sendmail(SENDER_EMAIL, receiver_email, message)
-    return i
+        server.sendmail(SENDER_EMAIL, receiver_email, message)
+    
 
 if __name__ == '__main__':
     receiver_email = input('Enter the email id : ')
